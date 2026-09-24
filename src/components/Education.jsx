@@ -1,0 +1,5 @@
+import { GraduationCap } from "lucide-react";
+import Section, { Reveal } from "./Section";
+import { personal } from "../data/personal";
+const coursework=["Computer Networks","Cybersecurity Fundamentals","Data Structures & Algorithms","Operating Systems"];
+export default function Education(){return <Section id="education" index="11" label="EDUCATION.md" title="Education"><Reveal><div className="p-6 md:p-8 rounded-md border border-line bg-bg-panel"><div className="flex items-start gap-4 mb-6"><GraduationCap size={24} className="text-cool shrink-0 mt-1"/><div><h3 className="font-display text-xl font-semibold">{personal.college}</h3><p className="text-ink-dim">{personal.degree}</p><p className="font-mono text-xs text-ink-faint mt-1">{personal.status} · {personal.location}</p></div></div><p className="font-mono text-[11px] text-ink-faint tracking-widest mb-3">RELEVANT COURSEWORK</p><div className="flex flex-wrap gap-2">{coursework.map(c=><span key={c} className="text-xs font-mono px-3 py-1.5 bg-bg-panel-raised rounded-sm text-ink-dim">{c}</span>)}</div></div></Reveal></Section>;}
