@@ -1,0 +1,2 @@
+import { personal } from "../data/personal";
+export default function StatusBar(){return <div className="hidden sm:flex items-center justify-between px-4 md:px-8 h-8 text-[11px] font-mono tracking-wide text-ink-faint border-b border-line bg-bg/95"><span className="flex items-center gap-1.5"><span className="inline-block w-1.5 h-1.5 rounded-full bg-cool" aria-hidden="true"/>STATUS: ACTIVE_LEARNER</span><span>UPTIME: YEAR_03 // {personal.status.split("·")[1]?.trim()||"IN PROGRESS"}</span><span>LOCATION: {personal.location.toUpperCase()}</span></div>;}
