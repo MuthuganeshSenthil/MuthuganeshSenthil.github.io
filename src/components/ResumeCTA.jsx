@@ -1,0 +1,4 @@
+import { Download } from "lucide-react";
+import { Reveal } from "./Section";
+import { personal } from "../data/personal";
+export default function ResumeCTA(){return <section className="border-b border-line bg-bg-panel/40"><div className="max-w-6xl mx-auto px-4 md:px-8 py-16 md:py-20 text-center"><Reveal><h2 className="font-display text-2xl md:text-3xl font-semibold mb-3">Want to know more about my work?</h2><p className="text-ink-dim max-w-md mx-auto mb-8">Download my resume to explore my education, projects, technical skills, and cybersecurity journey.</p><a href={personal.resumeUrl} download className="inline-flex items-center gap-2 px-6 py-3 bg-signal text-bg font-mono text-sm font-medium rounded-sm hover:bg-signal/90 transition-colors"><Download size={16}/> Download Resume</a></Reveal></div></section>;}
